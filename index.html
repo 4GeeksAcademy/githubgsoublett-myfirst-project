@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HealthCore | Same-Day Bilingual Ambulatory Care</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="HealthCore offers same-day bilingual ambulatory care across Texas, Florida and Georgia with extended hours and primary, specialty and preventive services." />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <!-- Accessibility: Skip link -->
+  <a href="#main-content"
+     class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-white focus:text-sky-900 focus:px-4 focus:py-2 focus:ring-2 focus:ring-sky-600 focus:outline-none">
+    Skip to main content
+  </a>
+
+  <!-- Bloque: Layout principal -->
+  <div class="min-h-screen flex flex-col" itemscope itemtype="https://schema.org/Hospital">
+    <!-- Header -->
+    <!-- Bloque: Header -->
+    <header class="bg-white shadow-sm" role="banner">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between py-4">
+          <!-- Elemento: Logo -->
+          <div class="flex items-center gap-2">
+            <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-sky-700 text-white font-bold">
+              HC
+            </span>
+            <div class="flex flex-col">
+              <span class="text-lg font-semibold text-sky-900" itemprop="name">HealthCore</span>
+              <span class="text-xs text-slate-500" data-i18n="header.tagline">
+                Modern ambulatory care for busy lives
+              </span>
+            </div>
+          </div>
+
+          <!-- Elemento: Navegación principal -->
+          <nav class="hidden md:flex items-center gap-6" role="navigation" aria-label="Primary navigation">
+            <a href="#hero"
+               class="text-sm font-medium text-slate-700 hover:text-sky-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2"
+               data-i18n="nav.home">
+              Home
+            </a>
+            <a href="#services"
+               class="text-sm font-medium text-slate-700 hover:text-sky-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2"
+               data-i18n="nav.services">
+              Services
+            </a>
+            <a href="#locations"
+               class="text-sm font-medium text-slate-700 hover:text-sky-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2"
+               data-i18n="nav.locations">
+              Locations
+            </a>
+            <a href="#contact"
+               class="text-sm font-medium text-slate-700 hover:text-sky-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2"
+               data-i18n="nav.contact">
+              Contact
+            </a>
+          </nav>
+
+          <!-- Elemento: Acciones Header -->
+          <div class="flex items-center gap-3">
+            <!-- Modificador: Botón Urgencias 24/7 -->
+            <a href="tel:+15123408800"
+               class="inline-flex items-center justify-center rounded-full bg-red-700 px-4 py-2 text-xs sm:text-sm font-semibold text-white shadow-sm hover:bg-red-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-600 focus-visible:ring-offset-2"
+               data-i18n="header.emergency">
+              24/7 Emergency Line
+            </a>
+
+            <!-- Elemento: Selector de idioma -->
+            <div class="flex items-center gap-1" aria-label="Language selector">
+              <button type="button"
+                      class="px-2 py-1 text-xs font-semibold rounded-full border border-sky-700 text-sky-800 bg-sky-50 hover:bg-sky-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2"
+                      data-lang-btn="en"
+                      aria-pressed="true">
+                EN
+              </button>
+              <button type="button"
+                      class="px-2 py-1 text-xs font-semibold rounded-full border border-slate-300 text-slate-700 bg-white hover:bg-slate-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2"
+                      data-lang-btn="es"
+                      aria-pressed="false">
+                ES
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main id="main-content" class="flex-1">
+      <!-- Hero -->
+      <!-- Bloque: Hero -->
+      <section id="hero" class="bg-sky-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
+          <div class="grid gap-10 lg:grid-cols-2 lg:items-center">
+            <!-- Elemento: Hero contenido -->
+            <div>
+              <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-4" data-i18n="hero.title">
+                Healthcare that fits your life
+              </h1>
+              <p class="text-sm sm:text-base lg:text-lg text-sky-100 mb-6" data-i18n="hero.subtitle">
+                12 ambulatory clinics across the US and UK offering same-day appointments, extended hours and bilingual care, so you get the care you need, when you need it.
+              </p>
+
+              <!-- Elemento: CTA principal -->
+              <div class="flex flex-wrap items-center gap-3 mb-6">
+                <a href="#appointment"
+                   class="inline-flex items-center justify-center rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-sky-900"
+                   data-i18n="hero.cta">
+                  Request an appointment
+                </a>
+                <a href="#services"
+                   class="inline-flex items-center justify-center rounded-full border border-sky-200 px-4 py-2 text-sm font-semibold text-sky-50 hover:bg-sky-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-sky-900"
+                   data-i18n="hero.secondary">
+                  Explore services
+                </a>
+              </div>
+
+              <!-- Elemento: Buscador de médicos/especialidades -->
+              <form class="bg-sky-800/70 rounded-xl p-4 space-y-3" aria-label="Find a doctor or specialty">
+                <div class="flex flex-col sm:flex-row gap-3">
+                  <div class="flex-1">
+                    <label for="search-specialty" class="block text-xs font-semibold text-sky-100 mb-1" data-i18n="hero.search.label">
+                      Search by doctor or specialty
+                    </label>
+                    <input id="search-specialty"
+                           type="search"
+                           class="w-full rounded-md border border-sky-300 bg-sky-900/40 px-3 py-2 text-sm text-white placeholder-sky-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-sky-900"
+                           placeholder="e.g. cardiology, diabetes, pediatrics"
+                           data-i18n-placeholder="hero.search.placeholder" />
+                  </div>
+                  <div class="sm:w-32">
+                    <label for="search-location" class="block text-xs font-semibold text-sky-100 mb-1" data-i18n="hero.location.label">
+                      Location
+                    </label>
+                    <select id="search-location"
+                            class="w-full rounded-md border border-sky-300 bg-sky-900/40 px-3 py-2 text-sm text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-sky-900"
+                            aria-label="Select location">
+                      <option value="all" data-i18n="hero.location.all">All locations</option>
+                      <option value="tx">Texas</option>
+                      <option value="fl">Florida</option>
+                      <option value="ga">Georgia</option>
+                    </select>
+                  </div>
+                </div>
+                <button type="submit"
+                        class="inline-flex items-center justify-center rounded-md bg-emerald-500 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-300 focus-visible:ring-offset-2 focus-visible:ring-offset-sky-900"
+                        data-i18n="hero.search.button">
+                  Find care
+                </button>
+              </form>
+            </div>
+
+            <!-- Elemento: Hero imagen / mapa conceptual -->
+            <aside class="relative">
+              <div class="rounded-2xl bg-sky-800/60 p-4 lg:p-6 flex flex-col gap-4">
+                <img src="https://images.unsplash.com/photo-1584466977773-e625c37cdd50?auto=format&fit=crop&w=800&q=80"
+                     alt="Modern ambulatory clinic with medical staff welcoming patients at the front desk"
+                     width="800"
+                     height="533"
+                     class="w-full h-48 sm:h-64 lg:h-72 object-cover rounded-xl border border-sky-200" />
+                <div class="space-y-2 text-sky-100 text-sm">
+                  <p data-i18n="hero.info.line1">
+                    Same-day appointments available in most US locations.
+                  </p>
+                  <p data-i18n="hero.info.line2">
+                    Bilingual staff in English and Spanish in Texas and Florida clinics.
+                  </p>
+                  <p data-i18n="hero.info.line3">
+                    Extended hours on weekdays and Saturdays for busy families and professionals.
+                  </p>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- Urgencias y contacto rápido -->
+      <!-- Bloque: Urgencias -->
+      <section class="bg-red-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <h2 class="text-lg font-semibold mb-1" data-i18n="urgent.title">
+                Urgent care and 24/7 phone triage
+              </h2>
+              <p class="text-sm text-red-100" data-i18n="urgent.description">
+                If you are experiencing urgent symptoms, call our emergency line or go to the nearest emergency department.
+              </p>
+            </div>
+            <div class="flex flex-wrap items-center gap-3">
+              <a href="tel:+15123408800"
+                 class="inline-flex items-center justify-center rounded-full bg-white px-4 py-2 text-sm font-semibold text-red-900 shadow-sm hover:bg-red-100 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-300 focus-visible:ring-offset-2 focus-visible:ring-offset-red-900"
+                 data-i18n="urgent.call">
+                Call Austin Emergency Line
+              </a>
+              <a href="https://maps.google.com?q=HealthCore+Austin+Central"
+                 class="inline-flex items-center justify-center rounded-full border border-red-200 px-4 py-2 text-sm font-semibold text-white hover:bg-red-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-300 focus-visible:ring-offset-2 focus-visible:ring-offset-red-900"
+                 data-i18n="urgent.map">
+                Open map to nearest clinic
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Servicios -->
+      <!-- Bloque: Servicios -->
+      <section id="services" class="bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
+          <header class="mb-8">
+            <h2 class="text-2xl font-bold text-slate-900" data-i18n="services.title">
+              Ambulatory services and specialties
+            </h2>
+            <p class="mt-2 text-sm text-slate-600" data-i18n="services.subtitle">
+              Comprehensive primary, specialty and preventive care designed around your schedule.
+            </p>
+          </header>
+
+          <!-- Elemento: Grid de servicios -->
+          <div class="grid gap-6 md:grid-cols-3">
+            <!-- Elemento: Tarjeta servicio -->
+            <article class="rounded-xl bg-white shadow-sm border border-slate-200 p-5 flex flex-col gap-3">
+              <div class="flex items-center gap-2">
+                <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-sky-700 text-white text-sm font-semibold">
+                  01
+                </span>
+                <h3 class="text-lg font-semibold text-slate-900" data-i18n="services.primary.title">
+                  Primary care & chronic conditions
+                </h3>
+              </div>
+              <ul class="mt-2 space-y-1 text-sm text-slate-700">
+                <li data-i18n="services.primary.item1">
+                  Same-day appointments with primary care physicians.
+                </li>
+                <li data-i18n="services.primary.item2">
+                  Ongoing management of diabetes, hypertension and asthma.
+                </li>
+              </ul>
+            </article>
+
+            <article class="rounded-xl bg-white shadow-sm border border-slate-200 p-5 flex flex-col gap-3">
+              <div class="flex items-center gap-2">
+                <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-sky-700 text-white text-sm font-semibold">
+                  02
+                </span>
+                <h3 class="text-lg font-semibold text-slate-900" data-i18n="services.specialists.title">
+                  Specialist consultations
+                </h3>
+              </div>
+              <ul class="mt-2 space-y-1 text-sm text-slate-700">
+                <li data-i18n="services.specialists.item1">
+                  Cardiology, endocrinology, pulmonology and women’s health.
+                </li>
+                <li data-i18n="services.specialists.item2">
+                  Coordinated referrals within the HealthCore network.
+                </li>
+              </ul>
+            </article>
+
+            <article class="rounded-xl bg-white shadow-sm border border-slate-200 p-5 flex flex-col gap-3">
+              <div class="flex items-center gap-2">
+                <span class="inline-flex h-9 w-9 items-center justify-center rounded-full bg-sky-700 text-white text-sm font-semibold">
+                  03
+                </span>
+                <h3 class="text-lg font-semibold text-slate-900" data-i18n="services.preventive.title">
+                  Preventive care & wellness
+                </h3>
+              </div>
+              <ul class="mt-2 space-y-1 text-sm text-slate-700">
+                <li data-i18n="services.preventive.item1">
+                  Check-ups, vaccinations and annual reviews.
+                </li>
+                <li data-i18n="services.preventive.item2">
+                  Mental health counseling and referrals to psychiatry.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Por qué HealthCore -->
+      <!-- Bloque: Por qué HealthCore -->
+      <section class="bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
+          <header class="mb-8">
+            <h2 class="text-2xl font-bold text-slate-900" data-i18n="why.title">
+              Why choose HealthCore
+            </h2>
+          </header>
+          <div class="grid gap-8 lg:grid-cols-2">
+            <!-- Elemento: Lista de beneficios -->
+            <div class="space-y-3 text-sm text-slate-700">
+              <p data-i18n="why.item1">
+                Same-day appointments in most locations.
+              </p>
+              <p data-i18n="why.item2">
+                Extended hours — weekdays until 7pm or 8pm, Saturdays available.
+              </p>
+              <p data-i18n="why.item3">
+                Bilingual staff in English and Spanish in US locations.
+              </p>
+              <p data-i18n="why.item4">
+                12 clinics across Texas, Florida, Georgia and the United Kingdom.
+              </p>
+            </div>
+
+            <!-- Elemento: Geo / mapa conceptual -->
+            <aside class="rounded-xl border border-slate-200 bg-slate-50 p-5 space-y-3">
+              <h3 class="text-lg font-semibold text-slate-900" data-i18n="geo.title">
+                HealthCore US presence
+              </h3>
+              <p class="text-sm text-slate-700" data-i18n="geo.description">
+                Our US clinics focus on ambulatory care for families, professionals and older adults, with strong coordination across Texas, Florida and Georgia.
+              </p>
+              <div class="mt-3 h-40 rounded-lg bg-sky-100 border border-sky-300 flex items-center justify-center text-xs text-sky-900">
+                <span data-i18n="geo.map.placeholder">
+                  Map placeholder: US clinics in Texas, Florida and Georgia
+                </span>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- Ubicaciones -->
+      <!-- Bloque: Ubicaciones -->
+      <section id="locations" class="bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
+          <header class="mb-6">
+            <h2 class="text-2xl font-bold text-slate-900" data-i18n="locations.title">
+              US clinic locations
+            </h2>
+            <p class="mt-2 text-sm text-slate-600" data-i18n="locations.subtitle">
+              UK clinics serve an independent market and are not listed on this public site.
+            </p>
+          </header>
+
+          <!-- Elemento: Tabla de ubicaciones -->
+          <div class="overflow-x-auto rounded-xl border border-slate-200 bg-white">
+            <table class="min-w-full text-left text-sm">
+              <thead class="bg-slate-100 text-slate-800">
+                <tr>
+                  <th scope="col" class="px-4 py-3 font-semibold" data-i18n="locations.table.clinic">Clinic name</th>
+                  <th scope="col" class="px-4 py-3 font-semibold" data-i18n="locations.table.city">City</th>
+                  <th scope="col" class="px-4 py-3 font-semibold" data-i18n="locations.table.state">State</th>
+                  <th scope="col" class="px-4 py-3 font-semibold" data-i18n="locations.table.phone">Phone</th>
+                  <th scope="col" class="px-4 py-3 font-semibold" data-i18n="locations.table.hours">Hours</th>
+                </tr>
+              </thead>
+              <tbody class="divide-y divide-slate-100 text-slate-700">
+                <tr itemprop="department" itemscope itemtype="https://schema.org/MedicalClinic">
+                  <td class="px-4 py-3 font-medium" itemprop="name">HealthCore Austin Central</td>
+                  <td class="px-4 py-3" itemprop="addressLocality">Austin</td>
+                  <td class="px-4 py-3" itemprop="addressRegion">TX</td>
+                  <td class="px-4 py-3">
+                    <a href="tel:+15123408800"
+                       class="text-sky-700 hover:text-sky-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2"
+                       itemprop="telephone">
+                      (512) 340-8800
+                    </a>
+                  </td>
+                  <td class="px-4 py-3" itemprop="openingHours">
+                    Mon–Fri 7am–8pm · Sat 9am–3pm
+                  </td>
+                </tr>
+                <tr itemprop="department" itemscope itemtype="https://schema.org/MedicalClinic">
+                  <td class="px-4 py-3 font-medium" itemprop="name">HealthCore Austin North</td>
+                  <td class="px-4 py-3" itemprop="addressLocality">Austin</td>
+                  <td class="px-4 py-3" itemprop="addressRegion">TX</td>
+                  <td class="px-4 py-3">
+                    <a href="tel:+15123408810"
+                       class="text-sky-700 hover:text-sky-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2"
+                       itemprop="telephone">
+                      (512) 340-8810
+                    </a>
+                  </td>
+                  <td class="px-4 py-3" itemprop="openingHours">
+                    Mon–Fri 8am–7pm
+                  </td>
+                </tr>
+                <tr itemprop="department" itemscope itemtype="https://schema.org/MedicalClinic">
+                  <td class="px-4 py-3 font-medium" itemprop="name">HealthCore San Antonio</td>
+                  <td class="px-4 py-3" itemprop="addressLocality">San Antonio</td>
+                  <td class="px-4 py-3" itemprop="addressRegion">TX</td>
+                  <td class="px-4 py-3">
+                    <a href="tel:+12107204400"
+                       class="text-sky-700 hover:text-sky-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2"
+                       itemprop="telephone">
+                      (210) 720-4400
+                    </a>
+                  </td>
+                  <td class="px-4 py-3" itemprop="openingHours">
+                    Mon–Fri 8am–6pm · Sat 9am–1pm
+                  </td>
+                </tr>
+                <tr itemprop="department" itemscope itemtype="https://schema.org/MedicalClinic">
+                  <td class="px-4 py-3 font-medium" itemprop="name">HealthCore Miami</td>
+                  <td class="px-4 py-3" itemprop="addressLocality">Miami</td>
+                  <td class="px-4 py-3" itemprop="addressRegion">FL</td>
+                  <td class="px-4 py-3">
+                    <a href="tel:+13055107700"
+                       class="text-sky-700 hover:text-sky-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2"
+                       itemprop="telephone">
+                      (305) 510-7700
+                    </a>
+                  </td>
+                  <td class="px-4 py-3" itemprop="openingHours">
+                    Mon–Fri 7am–8pm · Sat 9am–4pm
+                  </td>
+                </tr>
+                <tr itemprop="department" itemscope itemtype="https://schema.org/MedicalClinic">
+                  <td class="px-4 py-3 font-medium" itemprop="name">HealthCore Orlando</td>
+                  <td class="px-4 py-3" itemprop="addressLocality">Orlando</td>
+                  <td class="px-4 py-3" itemprop="addressRegion">FL</td>
+                  <td class="px-4 py-3">
+                    <a href="tel:+14078926600"
+                       class="text-sky-700 hover:text-sky-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2"
+                       itemprop="telephone">
+                      (407) 892-6600
+                    </a>
+                  </td>
+                  <td class="px-4 py-3" itemprop="openingHours">
+                    Mon–Fri 8am–6pm
+                  </td>
+                </tr>
+                <tr itemprop="department" itemscope itemtype="https://schema.org/MedicalClinic">
+                  <td class="px-4 py-3 font-medium" itemprop="name">HealthCore Atlanta</td>
+                  <td class="px-4 py-3" itemprop="addressLocality">Atlanta</td>
+                  <td class="px-4 py-3" itemprop="addressRegion">GA</td>
+                  <td class="px-4 py-3">
+                    <a href="tel:+14043309900"
+                       class="text-sky-700 hover:text-sky-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2"
+                       itemprop="telephone">
+                      (404) 330-9900
+                    </a>
+                  </td>
+                  <td class="px-4 py-3" itemprop="openingHours">
+                    Mon–Fri 8am–7pm
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Geolocalización y SEO local -->
+      <!-- Bloque: Geo -->
+      <section class="bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
+          <div class="grid gap-8 lg:grid-cols-2">
+            <!-- Elemento: Dirección principal -->
+            <article class="space-y-3 text-sm text-slate-700" itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+              <h2 class="text-2xl font-bold text-slate-900" data-i18n="address.title">
+                Austin headquarters and US operations
+              </h2>
+              <p>
+                <span class="font-semibold" data-i18n="address.label">Headquarters address:</span><br />
+                <span itemprop="streetAddress">123 HealthCore Way</span><br />
+                <span itemprop="addressLocality">Austin</span>,
+                <span itemprop="addressRegion">TX</span>
+                <span itemprop="postalCode">78701</span>,
+                <span itemprop="addressCountry">US</span>
+              </p>
+              <p>
+                <span class="font-semibold" data-i18n="address.phone.label">Main phone:</span>
+                <a href="tel:+15123408800"
+                   class="text-sky-700 hover:text-sky-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2"
+                   itemprop="telephone">
+                  (512) 340-8800
+                </a>
+              </p>
+              <p>
+                <span class="font-semibold" data-i18n="address.hours.label">Typical hours:</span>
+                <span itemprop="openingHours">Mon–Fri 8am–6pm</span>
+              </p>
+            </article>
+
+            <!-- Elemento: Contenedor mapa -->
+            <aside class="rounded-xl border border-slate-200 bg-slate-50 p-5 space-y-3">
+              <h3 class="text-lg font-semibold text-slate-900" data-i18n="address.map.title">
+                Location map placeholder
+              </h3>
+              <div class="mt-2 h-48 rounded-lg bg-sky-100 border border-sky-300 flex items-center justify-center text-xs text-sky-900">
+                <span data-i18n="address.map.placeholder">
+                  Interactive map placeholder for HealthCore Austin headquarters
+                </span>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <!-- Bloque: Contacto -->
+      <section id="contact" class="bg-slate-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
+          <header class="mb-6">
+            <h2 class="text-2xl font-bold text-slate-900" data-i18n="contact.title">
+              Contact and general inquiries
+            </h2>
+          </header>
+          <div class="grid gap-6 md:grid-cols-2">
+            <!-- Elemento: Datos de contacto -->
+            <div class="space-y-3 text-sm text-slate-700">
+              <p>
+                <span class="font-semibold" data-i18n="contact.general.label">General inquiries:</span>
+                <a href="mailto:info@healthcore.com"
+                   class="text-sky-700 hover:text-sky-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2">
+                  info@healthcore.com
+                </a>
+              </p>
+              <p>
+                <span class="font-semibold" data-i18n="contact.austin.label">Austin headquarters:</span>
+                <a href="tel:+15123408800"
+                   class="text-sky-700 hover:text-sky-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2">
+                  (512) 340-8800
+                </a>
+              </p>
+              <p>
+                <span class="font-semibold" data-i18n="contact.miami.label">Miami clinic:</span>
+                <a href="tel:+13055107700"
+                   class="text-sky-700 hover:text-sky-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2">
+                  (305) 510-7700
+                </a>
+              </p>
+              <p>
+                <span class="font-semibold" data-i18n="contact.uk.label">United Kingdom (London):</span>
+                <a href="tel:+442079460100"
+                   class="text-sky-700 hover:text-sky-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2">
+                  +44 20 7946 0100
+                </a>
+              </p>
+            </div>
+
+            <!-- Elemento: Formulario de cita -->
+            <article id="appointment" class="rounded-xl bg-white shadow-sm border border-slate-200 p-5 space-y-4" aria-label="Appointment request form">
+              <h3 class="text-lg font-semibold text-slate-900" data-i18n="appointment.title">
+                Request an appointment
+              </h3>
+              <form class="space-y-3" novalidate>
+                <div>
+                  <label for="appt-name" class="block text-xs font-semibold text-slate-800 mb-1" data-i18n="appointment.name.label">
+                    Full name
+                  </label>
+                  <input id="appt-name"
+                         type="text"
+                         class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm text-slate-900 placeholder-slate-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2"
+                         placeholder="Enter your full name"
+                         data-i18n-placeholder="appointment.name.placeholder"
+                         aria-required="true" />
+                </div>
+                <div>
+                  <label for="appt-email" class="block text-xs font-semibold text-slate-800 mb-1" data-i18n="appointment.email.label">
+                    Email address
+                  </label>
+                  <input id="appt-email"
+                         type="email"
+                         class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm text-slate-900 placeholder-slate-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2"
+                         placeholder="you@example.com"
+                         data-i18n-placeholder="appointment.email.placeholder"
+                         aria-required="true" />
+                </div>
+                <div>
+                  <label for="appt-location" class="block text-xs font-semibold text-slate-800 mb-1" data-i18n="appointment.location.label">
+                    Preferred clinic location
+                  </label>
+                  <select id="appt-location"
+                          class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm text-slate-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2"
+                          aria-required="true">
+                    <option value="" data-i18n="appointment.location.select">Select a location</option>
+                    <option value="austin-central">HealthCore Austin Central</option>
+                    <option value="austin-north">HealthCore Austin North</option>
+                    <option value="san-antonio">HealthCore San Antonio</option>
+                    <option value="miami">HealthCore Miami</option>
+                    <option value="orlando">HealthCore Orlando</option>
+                    <option value="atlanta">HealthCore Atlanta</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="appt-notes" class="block text-xs font-semibold text-slate-800 mb-1" data-i18n="appointment.notes.label">
+                    Reason for visit or symptoms
+                  </label>
+                  <textarea id="appt-notes"
+                            rows="3"
+                            class="w-full rounded-md border border-slate-300 px-3 py-2 text-sm text-slate-900 placeholder-slate-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2"
+                            placeholder="Briefly describe your reason for visit"
+                            data-i18n-placeholder="appointment.notes.placeholder"></textarea>
+                </div>
+                <button type="submit"
+                        class="inline-flex items-center justify-center rounded-md bg-sky-700 px-4 py-2 text-sm font-semibold text-white hover:bg-sky-800 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-600 focus-visible:ring-offset-2"
+                        data-i18n="appointment.submit">
+                  Submit request
+                </button>
+                <p class="text-xs text-emerald-700 mt-2" aria-live="polite" data-i18n="appointment.success">
+                  Your request has been received. Our team will contact you within one business day.
+                </p>
+              </form>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <!-- Bloque: Footer -->
+    <footer class="bg-slate-900 text-slate-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 space-y-4">
+        <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <p class="text-xs" data-i18n="footer.copy">
+            © 2025 HealthCore. All rights reserved.
+          </p>
+          <div class="flex flex-wrap items-center gap-4 text-xs">
+            <a href="#"
+               class="hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
+               aria-label="HealthCore on LinkedIn"
+               data-i18n="footer.linkedin">
+              LinkedIn
+            </a>
+            <a href="#"
+               class="hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
+               aria-label="HealthCore on Facebook"
+               data-i18n="footer.facebook">
+              Facebook
+            </a>
+            <a href="#"
+               class="hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-900"
+               aria-label="HealthCore on Instagram"
+               data-i18n="footer.instagram">
+              Instagram
+            </a>
+          </div>
+        </div>
+        <div class="text-xs text-slate-400 space-y-1">
+          <p data-i18n="footer.legal">
+            HealthCore complies with applicable medical certifications and privacy regulations in the United States and the United Kingdom.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Bloque: Lógica de idioma (JavaScript inline) -->
+  <script>
+    const translations = {
+      en: {
+        'header.tagline': 'Modern ambulatory care for busy lives',
+        'nav.home': 'Home',
+        'nav.services': 'Services',
+        'nav.locations': 'Locations',
+        'nav.contact': 'Contact',
+        'header.emergency': '24/7 Emergency Line',
+        'hero.title': 'Healthcare that fits your life',
+        'hero.subtitle': '12 ambulatory clinics across the US and UK offering same-day appointments, extended hours and bilingual care, so you get the care you need, when you need it.',
+        'hero.cta': 'Request an appointment',
+        'hero.secondary': 'Explore services',
+        'hero.search.label': 'Search by doctor or specialty',
+        'hero.search.placeholder': 'e.g. cardiology, diabetes, pediatrics',
+        'hero.location.label': 'Location',
+        'hero.location.all': 'All locations',
+        'hero.search.button': 'Find care',
+        'hero.info.line1': 'Same-day appointments available in most US locations.',
+        'hero.info.line2': 'Bilingual staff in English and Spanish in Texas and Florida clinics.',
+        'hero.info.line3': 'Extended hours on weekdays and Saturdays for busy families and professionals.',
+        'urgent.title': 'Urgent care and 24/7 phone triage',
+        'urgent.description': 'If you are experiencing urgent symptoms, call our emergency line or go to the nearest emergency department.',
+        'urgent.call': 'Call Austin Emergency Line',
+        'urgent.map': 'Open map to nearest clinic',
+        'services.title': 'Ambulatory services and specialties',
+        'services.subtitle': 'Comprehensive primary, specialty and preventive care designed around your schedule.',
+        'services.primary.title': 'Primary care & chronic conditions',
+        'services.primary.item1': 'Same-day appointments with primary care physicians.',
+        'services.primary.item2': 'Ongoing management of diabetes, hypertension and asthma.',
+        'services.specialists.title': 'Specialist consultations',
+        'services.specialists.item1': 'Cardiology, endocrinology, pulmonology and women’s health.',
+        'services.specialists.item2': 'Coordinated referrals within the HealthCore network.',
+        'services.preventive.title': 'Preventive care & wellness',
+        'services.preventive.item1': 'Check-ups, vaccinations and annual reviews.',
+        'services.preventive.item2': 'Mental health counseling and referrals to psychiatry.',
+        'why.title': 'Why choose HealthCore',
+        'why.item1': 'Same-day appointments in most locations.',
+        'why.item2': 'Extended hours — weekdays until 7pm or 8pm, Saturdays available.',
+        'why.item3': 'Bilingual staff in English and Spanish in US locations.',
+        'why.item4': '12 clinics across Texas, Florida, Georgia and the United Kingdom.',
+        'geo.title': 'HealthCore US presence',
+        'geo.description': 'Our US clinics focus on ambulatory care for families, professionals and older adults, with strong coordination across Texas, Florida and Georgia.',
+        'geo.map.placeholder': 'Map placeholder: US clinics in Texas, Florida and Georgia',
+        'locations.title': 'US clinic locations',
