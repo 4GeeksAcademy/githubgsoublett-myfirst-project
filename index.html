@@ -1,611 +1,276 @@
 <!DOCTYPE html>
-<html lang="en" data-lang="en">
+<html lang="es">
+
 <head>
-  <meta charset="UTF-8" />
-  <title data-i18n="meta.title">HealthCore | Same-Day Bilingual Ambulatory Care</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" data-i18n="meta.description"
-        content="HealthCore offers same-day bilingual ambulatory care across Texas, Florida and Georgia with extended hours and primary, specialty and preventive services." />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Sitio web oficial de Elena Vásquez, artista plástica contemporánea. Descubre su trayectoria, obra y próximas exposiciones.">
+  <meta name="keywords" content="arte contemporáneo, artista plástica, Elena Vásquez, exposiciones, galería">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Elena Vásquez — Arte Contemporáneo">
+  <meta property="og:description" content="Sitio web oficial de Elena Vásquez, artista plástica contemporánea.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://elenavasquez.art">
+  <meta property="og:image"
+    content="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Elena Vásquez — Arte Contemporáneo">
+  <meta name="twitter:description" content="Sitio web oficial de Elena Vásquez, artista plástica contemporánea.">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Elena Vásquez",
+    "givenName": "Elena",
+    "familyName": "Vásquez",
+    "jobTitle": "Artista Plástica",
+    "description": "Artista plástica contemporánea especializada en arte abstracto y expresionismo moderno.",
+    "url": "https://elenavasquez.art",
+    "image": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=1200&q=80",
+    "sameAs": [
+      "https://instagram.com/elenavasquezart",
+      "https://facebook.com/elenavasquezart",
+      "https://behance.net/elenavasquez"
+    ],
+    "nationality": {
+      "@type": "Country",
+      "name": "México"
+    },
+    "birthPlace": {
+      "@type": "Place",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ciudad de México",
+        "addressCountry": "MX"
+      }
+    },
+    "knowsAbout": [
+      "Arte Abstracto",
+      "Pintura al Óleo",
+      "Expresionismo Moderno",
+      "Arte Contemporáneo"
+    ]
+  }
+  </script>
+
+  <title>Elena Vásquez — Arte Contemporáneo</title>
+  <link rel="canonical" href="https://elenavasquez.art">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="bg-slate-50 text-slate-900">
+<body>
 
-  <!-- Skip link -->
-  <a href="#main-content"
-     class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-white focus:text-sky-900 focus:px-4 focus:py-2 focus:ring-2 focus:ring-sky-600">
-    Skip to main content
-  </a>
+  <!-- ===== ENLACE DE SALTO (Skip Link) ===== -->
+  <a href="#hero" class="skip-link">Saltar al contenido principal</a>
 
-  <!-- Bloque: Layout principal -->
-  <div class="min-h-screen flex flex-col" itemscope itemtype="https://schema.org/Hospital">
+  <!-- ===== HEADER / NAVEGACIÓN ===== -->
+  <header class="site-header" role="banner" aria-label="Encabezado del sitio">
+    <nav class="container header-inner" aria-label="Navegación principal">
+      <div class="logo">
+        <a href="/" aria-label="Ir al inicio">
+          Elena<span>Vásquez</span>
+        </a>
+      </div>
+      <ul class="main-nav" role="list">
+        <li><a href="#sobre-mi" aria-current="page">Sobre mí</a></li>
+        <li><a href="#trayectoria">Trayectoria</a></li>
+        <li><a href="#presentaciones">Próximas presentaciones</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Bloque: Header -->
-    <header class="bg-white shadow-sm" role="banner">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex items-center justify-between py-4">
+  <!-- ===== HERO ===== -->
+  <section id="hero" class="section hero" aria-labelledby="hero-title">
+    <div class="container hero-content">
+      <span class="hero-badge" aria-hidden="true">✨ Arte Contemporáneo</span>
+      <h1 id="hero-title" class="hero-name">
+        Elena <span>Vásquez</span>
+      </h1>
+      <p class="hero-tagline">
+        Explora un universo de color, textura y emoción a través del arte abstracto contemporáneo.
+        Cada trazo cuenta una historia.
+      </p>
+      <div class="hero-actions">
+        <a href="#sobre-mi" class="btn btn-primary" aria-label="Conocer más sobre Elena Vásquez">
+          Conóceme
+        </a>
+        <a href="#presentaciones" class="btn btn-secondary" aria-label="Ver próximas presentaciones">
+          Próximas fechas
+        </a>
+      </div>
+    </div>
+  </section>
 
-          <!-- Elemento: Logo -->
-          <div class="flex items-center gap-2">
-            <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-sky-700 text-white font-bold">
-              HC
-            </span>
-            <div class="flex flex-col">
-              <span class="text-lg font-semibold text-sky-900" itemprop="name">HealthCore</span>
-              <span class="text-xs text-slate-500" data-i18n="header.tagline">
-                Modern ambulatory care for busy lives
-              </span>
-            </div>
-          </div>
-
-          <!-- Elemento: Navegación -->
-          <nav class="hidden md:flex items-center gap-6" role="navigation" aria-label="Primary navigation">
-            <a href="#hero" class="text-sm font-medium text-slate-700 hover:text-sky-800"
-               data-i18n="nav.home">Home</a>
-            <a href="#services" class="text-sm font-medium text-slate-700 hover:text-sky-800"
-               data-i18n="nav.services">Services</a>
-            <a href="#locations" class="text-sm font-medium text-slate-700 hover:text-sky-800"
-               data-i18n="nav.locations">Locations</a>
-            <a href="#contact" class="text-sm font-medium text-slate-700 hover:text-sky-800"
-               data-i18n="nav.contact">Contact</a>
-          </nav>
-
-          <!-- Elemento: Acciones -->
-          <div class="flex items-center gap-3">
-
-            <!-- Modificador: Botón Urgencias -->
-            <a href="tel:+15123408800"
-               class="inline-flex items-center justify-center rounded-full bg-red-700 px-4 py-2 text-xs sm:text-sm font-semibold text-white"
-               data-i18n="header.emergency">
-              24/7 Emergency Line
-            </a>
-
-            <!-- Selector de idioma -->
-            <div class="flex items-center gap-1" aria-label="Language selector">
-              <button type="button"
-                      class="px-2 py-1 text-xs font-semibold rounded-full border border-sky-700 text-sky-800 bg-sky-50"
-                      data-lang-btn="en" aria-pressed="true">
-                EN
-              </button>
-              <button type="button"
-                      class="px-2 py-1 text-xs font-semibold rounded-full border border-slate-300 text-slate-700 bg-white"
-                      data-lang-btn="es" aria-pressed="false">
-                ES
-              </button>
-            </div>
-          </div>
-
+  <!-- ===== SOBRE MÍ ===== -->
+  <section id="sobre-mi" class="section" aria-labelledby="about-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="about-title" class="section-title">Sobre mí</h2>
+        <p class="section-subtitle">
+          Conoce mi historia, mi inspiración y el camino que me ha llevado a expresarme a través del arte.
+        </p>
+      </div>
+      <div class="about-grid">
+        <img class="about-image"
+          src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=800&q=80"
+          alt="Fotografía de Elena Vásquez en su estudio de arte, rodeada de pinturas y pinceles" loading="lazy">
+        <div class="about-text">
+          <h3>El color es mi lenguaje</h3>
+          <p>
+            Desde niña, Elena encontró en los colores una forma única de comunicarse. Nacida en la
+            Ciudad de México, estudió Artes Visuales en la Universidad Nacional Autónoma de México
+            y posteriormente perfeccionó su técnica en Barcelona y París.
+          </p>
+          <p>
+            Su obra explora la relación entre la emoción humana y la abstracción geométrica,
+            combinando técnicas clásicas del óleo con materiales contemporáneos. Ha participado en
+            más de treinta exposiciones colectivas y ocho individuales alrededor del mundo.
+          </p>
+          <p>
+            Hoy reside en su ciudad natal, donde continúa creando desde su estudio en la colonia
+            Roma, inspirándose en el caos y la belleza de la vida cotidiana.
+          </p>
         </div>
       </div>
-    </header>
+    </div>
+  </section>
 
-    <!-- Main -->
-    <main id="main-content" class="flex-1">
+  <!-- ===== TRAYECTORIA ===== -->
+  <section id="trayectoria" class="section trajectory" aria-labelledby="trajectory-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="trajectory-title" class="section-title">Trayectoria</h2>
+        <p class="section-subtitle">
+          Un recorrido por los hitos más importantes de mi carrera artística.
+        </p>
+      </div>
+      <div class="timeline" role="list" aria-label="Línea de tiempo de la trayectoria artística">
+        <article class="timeline-item" role="listitem">
+          <span class="timeline-year">2012</span>
+          <h3 class="timeline-title">Primera exposición individual</h3>
+          <p class="timeline-desc">
+            "Cromática del alma" en la Galería de Arte Contemporáneo de la Ciudad de México.
+            La muestra agotó todas las piezas en su primera semana.
+          </p>
+        </article>
+        <article class="timeline-item" role="listitem">
+          <span class="timeline-year">2015</span>
+          <h3 class="timeline-title">Residencia artística en Barcelona</h3>
+          <p class="timeline-desc">
+            Seleccionada para el programa de residencia en la Fundació Miró, donde desarrolló
+            su serie "Geometría emocional", posteriormente expuesta en Madrid y Berlín.
+          </p>
+        </article>
+        <article class="timeline-item" role="listitem">
+          <span class="timeline-year">2018</span>
+          <h3 class="timeline-title">Reconocimiento internacional</h3>
+          <p class="timeline-desc">
+            Galardonada con el Premio Iberoamericano de Artes Visuales. Su obra "Ecos del
+            silencio" fue adquirida por el Museo de Arte Moderno de Nueva York.
+          </p>
+        </article>
+        <article class="timeline-item" role="listitem">
+          <span class="timeline-year">2021</span>
+          <h3 class="timeline-title">Colaboración interdisciplinaria</h3>
+          <p class="timeline-desc">
+            Creó la instalación "Latido urbano" en colaboración con músicos y bailarines,
+            presentada en el Festival Internacional de Arte de la Ciudad de México.
+          </p>
+        </article>
+        <article class="timeline-item" role="listitem">
+          <span class="timeline-year">2024</span>
+          <h3 class="timeline-title">Nueva serie en desarrollo</h3>
+          <p class="timeline-desc">
+            Actualmente trabaja en "Fragmentos de luz", una serie que explora la interacción
+            entre pigmentos naturales y tecnología digital, con lanzamiento previsto para 2025.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-      <!-- Bloque: Hero -->
-      <section id="hero" class="bg-sky-900 text-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-16">
-          <div class="grid gap-10 lg:grid-cols-2 lg:items-center">
-
-            <!-- Elemento: Hero contenido -->
-            <div>
-              <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4" data-i18n="hero.title">
-                Healthcare that fits your life
-              </h1>
-
-              <p class="text-sm sm:text-base lg:text-lg text-sky-100 mb-6" data-i18n="hero.subtitle">
-                12 ambulatory clinics across the US and UK offering same-day appointments...
-              </p>
-
-              <div class="flex flex-wrap items-center gap-3 mb-6">
-                <a href="#appointment"
-                   class="inline-flex items-center justify-center rounded-full bg-emerald-500 px-5 py-2.5 text-sm font-semibold text-white"
-                   data-i18n="hero.cta">
-                  Request an appointment
-                </a>
-
-                <a href="#services"
-                   class="inline-flex items-center justify-center rounded-full border border-sky-200 px-4 py-2 text-sm font-semibold text-sky-50"
-                   data-i18n="hero.secondary">
-                  Explore services
-                </a>
-              </div>
-
-              <!-- Buscador -->
-              <form class="bg-sky-800/70 rounded-xl p-4 space-y-3">
-                <div class="flex flex-col sm:flex-row gap-3">
-
-                  <div class="flex-1">
-                    <label for="search-specialty" class="block text-xs font-semibold text-sky-100 mb-1"
-                           data-i18n="hero.search.label">
-                      Search by doctor or specialty
-                    </label>
-
-                    <input id="search-specialty" type="search"
-                           class="w-full rounded-md border border-sky-300 bg-sky-900/40 px-3 py-2 text-sm text-white"
-                           placeholder="e.g. cardiology, diabetes, pediatrics"
-                           data-i18n-placeholder="hero.search.placeholder" />
-                  </div>
-
-                  <div class="sm:w-32">
-                    <label for="search-location" class="block text-xs font-semibold text-sky-100 mb-1"
-                           data-i18n="hero.location.label">
-                      Location
-                    </label>
-
-                    <select id="search-location"
-                            class="w-full rounded-md border border-sky-300 bg-sky-900/40 px-3 py-2 text-sm text-white">
-                      <option value="all" data-i18n="hero.location.all">All locations</option>
-                      <option value="tx">Texas</option>
-                      <option value="fl">Florida</option>
-                      <option value="ga">Georgia</option>
-                    </select>
-                  </div>
-
-                </div>
-
-                <button type="submit"
-                        class="inline-flex items-center justify-center rounded-md bg-emerald-500 px-4 py-2 text-sm font-semibold text-white"
-                        data-i18n="hero.search.button">
-                  Find care
-                </button>
-              </form>
-            </div>
-
-            <!-- Elemento: Hero imagen -->
-            <aside>
-              <img src="https://images.unsplash.com/photo-1584466977773-e625c37cdd50?auto=format&fit=crop&w=800&q=80"
-                   alt="Modern ambulatory clinic with medical staff welcoming patients"
-                   width="800" height="533"
-                   class="w-full h-48 sm:h-64 lg:h-72 object-cover rounded-xl border border-sky-200" />
-
-              <div class="mt-4 space-y-2 text-sky-100 text-sm">
-                <p data-i18n="hero.info.line1">
-                  Same-day appointments available in most US locations.
-                </p>
-                <p data-i18n="hero.info.line2">
-                  Bilingual staff in English and Spanish in Texas and Florida clinics.
-                </p>
-                <p data-i18n="hero.info.line3">
-                  Extended hours on weekdays and Saturdays.
-                </p>
-              </div>
-            </aside>
-
+  <!-- ===== PRÓXIMAS PRESENTACIONES ===== -->
+  <section id="presentaciones" class="section" aria-labelledby="performances-title">
+    <div class="container">
+      <div class="section-header">
+        <h2 id="performances-title" class="section-title">Próximas presentaciones</h2>
+        <p class="section-subtitle">
+          No te pierdas las próximas exposiciones, galerías y eventos donde podrás conocer mi obra en persona.
+        </p>
+      </div>
+      <div class="performances-grid" role="list" aria-label="Lista de próximas presentaciones">
+        <article class="performance-card" role="listitem">
+          <span class="performance-date">15 Jun 2025</span>
+          <h3>Galería Nacional</h3>
+          <p>
+            Exposición colectiva "Nuevas miradas del arte abstracto" con la participación
+            de artistas emergentes de toda Latinoamérica.
+          </p>
+          <div class="performance-location" aria-label="Ubicación">
+            <span aria-hidden="true">📍</span>
+            <span>Ciudad de México, MX</span>
           </div>
-        </div>
-      </section>
-
-      <!-- Bloque: Urgencias -->
-      <section class="bg-red-900 text-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-
-            <div>
-              <h2 class="text-lg font-semibold mb-1" data-i18n="urgent.title">
-                Urgent care and 24/7 phone triage
-              </h2>
-              <p class="text-sm text-red-100" data-i18n="urgent.description">
-                If you are experiencing urgent symptoms, call our emergency line.
-              </p>
-            </div>
-
-            <div class="flex flex-wrap items-center gap-3">
-              <a href="tel:+15123408800"
-                 class="inline-flex items-center justify-center rounded-full bg-white px-4 py-2 text-sm font-semibold text-red-900"
-                 data-i18n="urgent.call">
-                Call Austin Emergency Line
-              </a>
-
-              <a href="https://maps.google.com?q=HealthCore+Austin+Central"
-                 class="inline-flex items-center justify-center rounded-full border border-red-200 px-4 py-2 text-sm font-semibold text-white"
-                 data-i18n="urgent.map">
-                Open map to nearest clinic
-              </a>
-            </div>
-
+        </article>
+        <article class="performance-card" role="listitem">
+          <span class="performance-date">22 Jul 2025</span>
+          <h3>Museo de Arte Moderno</h3>
+          <p>
+            Muestra individual "Fragmentos de luz" donde se exhibirá por primera vez su
+            nueva serie de obras experimentales.
+          </p>
+          <div class="performance-location" aria-label="Ubicación">
+            <span aria-hidden="true">📍</span>
+            <span>Buenos Aires, AR</span>
           </div>
-        </div>
-      </section>
-
-      <!-- Bloque: Servicios -->
-      <section id="services" class="bg-slate-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
-
-          <header class="mb-8">
-            <h2 class="text-2xl font-bold text-slate-900" data-i18n="services.title">
-              Ambulatory services and specialties
-            </h2>
-            <p class="mt-2 text-sm text-slate-600" data-i18n="services.subtitle">
-              Comprehensive primary, specialty and preventive care.
-            </p>
-          </header>
-
-          <div class="grid gap-6 md:grid-cols-3">
-
-            <!-- Servicio 1 -->
-            <article class="rounded-xl bg-white shadow-sm border border-slate-200 p-5">
-              <h3 class="text-lg font-semibold text-slate-900" data-i18n="services.primary.title">
-                Primary care & chronic conditions
-              </h3>
-              <ul class="mt-2 space-y-1 text-sm text-slate-700">
-                <li data-i18n="services.primary.item1">
-                  Same-day appointments with primary care physicians.
-                </li>
-                <li data-i18n="services.primary.item2">
-                  Ongoing management of diabetes, hypertension and asthma.
-                </li>
-              </ul>
-            </article>
-
-            <!-- Servicio 2 -->
-            <article class="rounded-xl bg-white shadow-sm border border-slate-200 p-5">
-              <h3 class="text-lg font-semibold text-slate-900" data-i18n="services.specialists.title">
-                Specialist consultations
-              </h3>
-              <ul class="mt-2 space-y-1 text-sm text-slate-700">
-                <li data-i18n="services.specialists.item1">
-                  Cardiology, endocrinology, pulmonology and women’s health.
-                </li>
-                <li data-i18n="services.specialists.item2">
-                  Coordinated referrals within the HealthCore network.
-                </li>
-              </ul>
-            </article>
-
-            <!-- Servicio 3 -->
-            <article class="rounded-xl bg-white shadow-sm border border-slate-200 p-5">
-              <h3 class="text-lg font-semibold text-slate-900" data-i18n="services.preventive.title">
-                Preventive care & wellness
-              </h3>
-              <ul class="mt-2 space-y-1 text-sm text-slate-700">
-                <li data-i18n="services.preventive.item1">
-                  Check-ups, vaccinations and annual reviews.
-                </li>
-                <li data-i18n="services.preventive.item2">
-                  Mental health counseling and referrals to psychiatry.
-                </li>
-              </ul>
-            </article>
-
+        </article>
+        <article class="performance-card" role="listitem">
+          <span class="performance-date">10 Sep 2025</span>
+          <h3>Feria Internacional de Arte</h3>
+          <p>
+            Stand exclusivo en la Feria Internacional de Arte Contemporáneo con piezas
+            seleccionadas de su serie "Geometría emocional".
+          </p>
+          <div class="performance-location" aria-label="Ubicación">
+            <span aria-hidden="true">📍</span>
+            <span>Madrid, ES</span>
           </div>
-        </div>
-      </section>
+        </article>
+      </div>
+    </div>
+  </section>
 
-      <!-- Bloque: Por qué HealthCore -->
-      <section class="bg-white">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" role="contentinfo" aria-label="Pie de página">
+    <div class="container">
+      <div class="footer-social">
+        <a href="https://instagram.com/elenavasquezart" target="_blank" rel="noopener noreferrer"
+          aria-label="Instagram de Elena Vásquez">
+          Instagram
+        </a>
+        <a href="https://facebook.com/elenavasquezart" target="_blank" rel="noopener noreferrer"
+          aria-label="Facebook de Elena Vásquez">
+          Facebook
+        </a>
+        <a href="https://behance.net/elenavasquez" target="_blank" rel="noopener noreferrer"
+          aria-label="Behance de Elena Vásquez">
+          Behance
+        </a>
+        <a href="mailto:contacto@elenavasquez.art" aria-label="Enviar correo electrónico a Elena Vásquez">
+          Correo
+        </a>
+      </div>
+      <p class="footer-copy">
+        &copy; 2025 Elena Vásquez. Todos los derechos reservados.
+      </p>
+    </div>
+  </footer>
 
-          <header class="mb-8">
-            <h2 class="text-2xl font-bold text-slate-900" data-i18n="why.title">
-              Why choose HealthCore
-            </h2>
-          </header>
+</body>
 
-          <div class="grid gap-8 lg:grid-cols-2">
-
-            <div class="space-y-3 text-sm text-slate-700">
-              <p data-i18n="why.item1">Same-day appointments in most locations.</p>
-              <p data-i18n="why.item2">Extended hours — weekdays until 7pm or 8pm.</p>
-              <p data-i18n="why.item3">Bilingual staff in English and Spanish.</p>
-              <p data-i18n="why.item4">12 clinics across Texas, Florida, Georgia and the UK.</p>
-            </div>
-
-            <aside class="rounded-xl border border-slate-200 bg-slate-50 p-5">
-              <h3 class="text-lg font-semibold text-slate-900" data-i18n="geo.title">
-                HealthCore US presence
-              </h3>
-              <p class="text-sm text-slate-700" data-i18n="geo.description">
-                Our US clinics focus on ambulatory care for families and professionals.
-              </p>
-              <div class="mt-3 h-40 rounded-lg bg-sky-100 border border-sky-300 flex items-center justify-center text-xs text-sky-900">
-                <span data-i18n="geo.map.placeholder">
-                  Map placeholder: US clinics in Texas, Florida and Georgia
-                </span>
-              </div>
-            </aside>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- Bloque: Ubicaciones -->
-      <section id="locations" class="bg-slate-50">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-14">
-
-          <header class="mb-6">
-            <h2 class="text-2xl font-bold text-slate-900" data-i18n="locations.title">
-              US clinic locations
-            </h2>
-            <p class="mt-2 text-sm text-slate-600" data-i18n="locations.subtitle">
-              UK clinics serve an independent market.
-            </p>
-          </header>
-
-          <div class="overflow-x-auto rounded-xl border border-slate-200 bg-white">
-            <table class="min-w-full text-left text-sm">
-              <thead class="bg-slate-100 text-slate-800">
-                <tr>
-                  <th class="px-4 py-3 font-semibold" data-i18n="locations.table.clinic">Clinic name</th>
-                  <th class="px-4 py-3 font-semibold" data-i18n="locations.table.city">City</th>
-                  <th class="px-4 py-3 font-semibold" data-i18n="locations.table.state">State</th>
-                  <th class="px-4 py-3 font-semibold" data-i18n="locations.table.phone">Phone</th>
-                  <th class="px-4 py-3 font-semibold" data-i18n="locations.table.hours">Hours</th>
-                </tr>
-              </thead>
-
-              <tbody class="divide-y divide-slate-100 text-slate-700">
-
-                <tr>
-                  <td class="px-4 py-3 font-medium">HealthCore Austin Central</td>
-                  <td class="px-4 py-3">Austin</td>
-                  <td class="px-4 py-3">TX</td>
-                  <td class="px-4 py-3">
-                    <a href="tel:+15123408800" class="text-sky-700">(512) 340-8800</a>
-                  </td>
-                  <td class="px-4 py-3">Mon–Fri 7am–8pm · Sat 9am–3pm</td>
-                </tr>
-
-                <tr>
-                  <td class="px-4 py-3 font-medium">HealthCore Austin North</td>
-                  <td class="px-4 py-3">Austin</td>
-                  <td class="px-4 py-3">TX</td>
-                  <td class="px-4 py-3">
-                    <a href="tel:+15123408810" class="text-sky-700">(512) 340-8810</a>
-                  </td>
-                  <td class="px-4 py-3">Mon–Fri 8am–7pm</td>
-                </tr>
-
-                <tr>
-                  <td class="px-4 py-3 font-medium">HealthCore San Antonio</td>
-                  <td class="px-4 py-3">San Antonio</td>
-                  <td class="px-4 py-3">TX</td>
-                  <td class="px-4 py-3">
-                    <a href="tel:+12107204400" class="text-sky-700">(210) 720-4400</a>
-                  </td>
-                  <td class="px-4 py-3">Mon–Fri 7am–8pm · Sat 9am–3pm</td>
-                  <script>
-/* ============================================================
-   TRADUCCIONES COMPLETAS EN / ES
-   ============================================================ */
-
-const translations = {
-  en: {
-    "meta.title": "HealthCore | Same-Day Bilingual Ambulatory Care",
-    "meta.description": "HealthCore offers same-day bilingual ambulatory care across Texas, Florida and Georgia with extended hours and primary, specialty and preventive services.",
-
-    "header.tagline": "Modern ambulatory care for busy lives",
-    "nav.home": "Home",
-    "nav.services": "Services",
-    "nav.locations": "Locations",
-    "nav.contact": "Contact",
-    "header.emergency": "24/7 Emergency Line",
-
-    "hero.title": "Healthcare that fits your life",
-    "hero.subtitle": "12 ambulatory clinics across the US and UK offering same-day appointments, extended hours and bilingual care, so you get the care you need, when you need it.",
-    "hero.cta": "Request an appointment",
-    "hero.secondary": "Explore services",
-    "hero.search.label": "Search by doctor or specialty",
-    "hero.search.placeholder": "e.g. cardiology, diabetes, pediatrics",
-    "hero.location.label": "Location",
-    "hero.location.all": "All locations",
-    "hero.search.button": "Find care",
-    "hero.info.line1": "Same-day appointments available in most US locations.",
-    "hero.info.line2": "Bilingual staff in English and Spanish in Texas and Florida clinics.",
-    "hero.info.line3": "Extended hours on weekdays and Saturdays.",
-
-    "urgent.title": "Urgent care and 24/7 phone triage",
-    "urgent.description": "If you are experiencing urgent symptoms, call our emergency line.",
-    "urgent.call": "Call Austin Emergency Line",
-    "urgent.map": "Open map to nearest clinic",
-
-    "services.title": "Ambulatory services and specialties",
-    "services.subtitle": "Comprehensive primary, specialty and preventive care.",
-    "services.primary.title": "Primary care & chronic conditions",
-    "services.primary.item1": "Same-day appointments with primary care physicians.",
-    "services.primary.item2": "Ongoing management of diabetes, hypertension and asthma.",
-    "services.specialists.title": "Specialist consultations",
-    "services.specialists.item1": "Cardiology, endocrinology, pulmonology and women’s health.",
-    "services.specialists.item2": "Coordinated referrals within the HealthCore network.",
-    "services.preventive.title": "Preventive care & wellness",
-    "services.preventive.item1": "Check-ups, vaccinations and annual reviews.",
-    "services.preventive.item2": "Mental health counseling and referrals to psychiatry.",
-
-    "why.title": "Why choose HealthCore",
-    "why.item1": "Same-day appointments in most locations.",
-    "why.item2": "Extended hours — weekdays until 7pm or 8pm.",
-    "why.item3": "Bilingual staff in English and Spanish.",
-    "why.item4": "12 clinics across Texas, Florida, Georgia and the UK.",
-
-    "geo.title": "HealthCore US presence",
-    "geo.description": "Our US clinics focus on ambulatory care for families and professionals.",
-    "geo.map.placeholder": "Map placeholder: US clinics in Texas, Florida and Georgia",
-
-    "locations.title": "US clinic locations",
-    "locations.subtitle": "UK clinics serve an independent market.",
-    "locations.table.clinic": "Clinic name",
-    "locations.table.city": "City",
-    "locations.table.state": "State",
-    "locations.table.phone": "Phone",
-    "locations.table.hours": "Hours",
-
-    "address.title": "Austin headquarters and US operations",
-    "address.label": "Headquarters address:",
-    "address.phone.label": "Main phone:",
-    "address.hours.label": "Typical hours:",
-    "address.map.title": "Location map placeholder",
-    "address.map.placeholder": "Interactive map placeholder for HealthCore Austin headquarters",
-
-    "contact.title": "Contact and general inquiries",
-    "contact.general.label": "General inquiries:",
-    "contact.austin.label": "Austin headquarters:",
-    "contact.miami.label": "Miami clinic:",
-    "contact.uk.label": "United Kingdom (London):",
-
-    "appointment.title": "Request an appointment",
-    "appointment.name.label": "Full name",
-    "appointment.name.placeholder": "Enter your full name",
-    "appointment.email.label": "Email address",
-    "appointment.email.placeholder": "you@example.com",
-    "appointment.location.label": "Preferred clinic location",
-    "appointment.location.select": "Select a location",
-    "appointment.notes.label": "Reason for visit or symptoms",
-    "appointment.notes.placeholder": "Briefly describe your reason for visit",
-    "appointment.submit": "Submit request",
-    "appointment.success": "Your request has been received. Our team will contact you within one business day.",
-
-    "footer.copy": "© 2025 HealthCore. All rights reserved.",
-    "footer.linkedin": "LinkedIn",
-    "footer.facebook": "Facebook",
-    "footer.instagram": "Instagram",
-    "footer.legal": "HealthCore complies with medical certifications and privacy regulations in the US and UK."
-  },
-
-  /* ============================================================
-     ESPAÑOL COMPLETO
-     ============================================================ */
-  es: {
-    "meta.title": "HealthCore | Atención ambulatoria bilingüe el mismo día",
-    "meta.description": "HealthCore ofrece atención ambulatoria bilingüe con citas el mismo día en Texas, Florida y Georgia, con horarios extendidos y servicios primarios, especializados y preventivos.",
-
-    "header.tagline": "Atención ambulatoria moderna para vidas ocupadas",
-    "nav.home": "Inicio",
-    "nav.services": "Servicios",
-    "nav.locations": "Ubicaciones",
-    "nav.contact": "Contacto",
-    "header.emergency": "Línea de urgencias 24/7",
-
-    "hero.title": "Atención médica que se adapta a tu vida",
-    "hero.subtitle": "12 clínicas ambulatorias en EE. UU. y Reino Unido que ofrecen citas el mismo día, horarios extendidos y atención bilingüe, para que recibas la atención que necesitas, cuando la necesitas.",
-    "hero.cta": "Solicitar una cita",
-    "hero.secondary": "Ver servicios",
-    "hero.search.label": "Buscar por médico o especialidad",
-    "hero.search.placeholder": "Ej. cardiología, diabetes, pediatría",
-    "hero.location.label": "Ubicación",
-    "hero.location.all": "Todas las ubicaciones",
-    "hero.search.button": "Buscar atención",
-    "hero.info.line1": "Citas el mismo día disponibles en la mayoría de las ubicaciones en EE. UU.",
-    "hero.info.line2": "Personal bilingüe en inglés y español en las clínicas de Texas y Florida.",
-    "hero.info.line3": "Horarios extendidos entre semana y sábados.",
-
-    "urgent.title": "Atención de urgencias y triage telefónico 24/7",
-    "urgent.description": "Si presentas síntomas urgentes, llama a nuestra línea de urgencias.",
-    "urgent.call": "Llamar a la línea de urgencias de Austin",
-    "urgent.map": "Abrir mapa a la clínica más cercana",
-
-    "services.title": "Servicios ambulatorios y especialidades",
-    "services.subtitle": "Atención primaria, especializada y preventiva.",
-    "services.primary.title": "Atención primaria y enfermedades crónicas",
-    "services.primary.item1": "Citas el mismo día con médicos de atención primaria.",
-    "services.primary.item2": "Manejo continuo de diabetes, hipertensión y asma.",
-    "services.specialists.title": "Consultas con especialistas",
-    "services.specialists.item1": "Cardiología, endocrinología, neumología y salud de la mujer.",
-    "services.specialists.item2": "Derivaciones coordinadas dentro de la red de HealthCore.",
-    "services.preventive.title": "Salud preventiva y bienestar",
-    "services.preventive.item1": "Chequeos, vacunación y revisiones anuales.",
-    "services.preventive.item2": "Asesoramiento en salud mental y derivaciones a psiquiatría.",
-
-    "why.title": "Por qué elegir HealthCore",
-    "why.item1": "Citas el mismo día en la mayoría de las ubicaciones.",
-    "why.item2": "Horarios extendidos — entre semana hasta las 7pm u 8pm.",
-    "why.item3": "Personal bilingüe en inglés y español.",
-    "why.item4": "12 clínicas en Texas, Florida, Georgia y Reino Unido.",
-
-    "geo.title": "Presencia de HealthCore en EE. UU.",
-    "geo.description": "Nuestras clínicas en EE. UU. se enfocan en atención ambulatoria para familias y profesionales.",
-    "geo.map.placeholder": "Mapa: clínicas en Texas, Florida y Georgia",
-
-    "locations.title": "Ubicaciones de clínicas en EE. UU.",
-    "locations.subtitle": "Las clínicas del Reino Unido atienden un mercado independiente.",
-    "locations.table.clinic": "Nombre de la clínica",
-    "locations.table.city": "Ciudad",
-    "locations.table.state": "Estado",
-    "locations.table.phone": "Teléfono",
-    "locations.table.hours": "Horario",
-
-    "address.title": "Sede de Austin y operaciones en EE. UU.",
-    "address.label": "Dirección de la sede:",
-    "address.phone.label": "Teléfono principal:",
-    "address.hours.label": "Horario habitual:",
-    "address.map.title": "Mapa de la sede",
-    "address.map.placeholder": "Mapa interactivo de la sede de HealthCore en Austin",
-
-    "contact.title": "Contacto y consultas generales",
-    "contact.general.label": "Consultas generales:",
-    "contact.austin.label": "Sede central de Austin:",
-    "contact.miami.label": "Clínica de Miami:",
-    "contact.uk.label": "Reino Unido (Londres):",
-
-    "appointment.title": "Solicitar una cita",
-    "appointment.name.label": "Nombre completo",
-    "appointment.name.placeholder": "Escribe tu nombre completo",
-    "appointment.email.label": "Correo electrónico",
-    "appointment.email.placeholder": "tucorreo@ejemplo.com",
-    "appointment.location.label": "Ubicación de clínica preferida",
-    "appointment.location.select": "Selecciona una ubicación",
-    "appointment.notes.label": "Motivo de la visita o síntomas",
-    "appointment.notes.placeholder": "Describe brevemente tu motivo de visita",
-    "appointment.submit": "Enviar solicitud",
-    "appointment.success": "Tu solicitud ha sido recibida. Nuestro equipo te contactará dentro de un día hábil.",
-
-    "footer.copy": "© 2025 HealthCore. Todos los derechos reservados.",
-    "footer.linkedin": "LinkedIn",
-    "footer.facebook": "Facebook",
-    "footer.instagram": "Instagram",
-    "footer.legal": "HealthCore cumple con certificaciones médicas y regulaciones de privacidad en EE. UU. y Reino Unido."
-  }
-};
-
-/* ============================================================
-   FUNCIÓN DE CAMBIO DE IDIOMA
-   ============================================================ */
-
-function applyLanguage(lang) {
-  const safeLang = lang === "es" ? "es" : "en";
-
-  document.documentElement.setAttribute("lang", safeLang);
-  document.documentElement.setAttribute("data-lang", safeLang);
-
-  // Cambiar textos
-  document.querySelectorAll("[data-i18n]").forEach(el => {
-    const key = el.getAttribute("data-i18n");
-    const value = translations[safeLang][key];
-    if (value) el.textContent = value;
-  });
-
-  // Cambiar placeholders
-  document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
-    const key = el.getAttribute("data-i18n-placeholder");
-    const value = translations[safeLang][key];
-    if (value) el.setAttribute("placeholder", value);
-  });
-
-  // Botones EN/ES
-  document.querySelectorAll("[data-lang-btn]").forEach(btn => {
-    const isActive = btn.getAttribute("data-lang-btn") === safeLang;
-    btn.setAttribute("aria-pressed", isActive ? "true" : "false");
-
-    if (isActive) {
-      btn.classList.remove("border-slate-300", "text-slate-700", "bg-white");
-      btn.classList.add("border-sky-700", "text-sky-800", "bg-sky-50");
-    } else {
-      btn.classList.remove("border-sky-700", "text-sky-800", "bg-sky-50");
-      btn.classList.add("border-slate-300", "text-slate-700", "bg-white");
-    }
-  });
-}
-
-/* ============================================================
-   EVENTOS DE BOTONES
-   ============================================================ */
-
-document.querySelectorAll("[data-lang-btn]").forEach(btn => {
-  btn.addEventListener("click", () => {
-    const lang = btn.getAttribute("data-lang-btn");
-    applyLanguage(lang);
-  });
-});
-
-/* Idioma inicial */
-applyLanguage("en");
-</script>
+</html>
